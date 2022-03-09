@@ -1,0 +1,4 @@
+#!/bin/bash
+
+su-exec kafka /opt/kafka/bin/zookeeper-server-start.sh config/zookeeper.properties &
+su-exec kafka /opt/kafka/bin/kafka-server-start.sh config/server.properties
